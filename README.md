@@ -45,10 +45,43 @@ In the final step of the installation, micromamba will alter your shell's config
 
 ## Data Exploration, Manipulation, and Cleaning (t4sg-data-exploration.ipynb)
 
-- More about matplotlib + diff libraries?
+### More about Pandas
 
-## Visualization
+Pandas is a powerful data manipulation and analysis library for Python. It provides data structures like DataFrames and Series that allow for efficient handling of structured data, along with a wide range of functions for data cleaning, transformation, and analysis. Pandas is particularly well-suited for working with tabular data, time series, and heterogeneous data types.
 
-About matplotlib 
+For more information on Pandas, you can refer to the following resources:
 
-## Web Scraping
+- [Pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html): Comprehensive documentation covering all aspects of Pandas.
+- [10 Minutes to Pandas](https://pandas.pydata.org/docs/user_guide/10min.html): A quick introduction to the main concepts and features of Pandas.
+- [Pandas Cookbook](https://pandas.pydata.org/docs/user_guide/cookbook.html): A collection of practical recipes for solving various data manipulation tasks.
+
+## Visualization (t4sg-data-visualization.ipynb)
+
+### More about Matplotlib
+
+Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. It provides a MATLAB-like interface for creating plots and graphs. Matplotlib is highly customizable and can produce publication-quality figures in various formats.
+
+For more information, you can refer to the following Matplotlib documentation:
+
+- [Matplotlib User's Guide](https://matplotlib.org/stable/users/index.html): A comprehensive guide to using Matplotlib.
+- [Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html): Step-by-step tutorials for various plotting techniques.
+- [Matplotlib Examples](https://matplotlib.org/stable/gallery/index.html): A gallery of example plots with source code.
+
+Matplotlib serves as the foundation for many other visualization libraries in Python, including Seaborn, which we'll discuss next.
+
+### More about Seaborn
+
+Seaborn is a statistical data visualization library built on top of Matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. Seaborn is particularly useful for creating complex visualizations with just a few lines of code, and it integrates well with Pandas DataFrames.
+
+Key features of Seaborn include:
+
+- Built-in themes for styling Matplotlib graphics
+- Tools for choosing color palettes to make beautiful plots that reveal patterns in your data
+- Functions for visualizing univariate, bivariate, and multivariate distributions
+- Tools for visualizing statistical relationships between variables
+
+For more information, you can refer to the following Seaborn documentation:
+
+- [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html): A comprehensive guide to using Seaborn.
+- [Seaborn Example Gallery](https://seaborn.pydata.org/examples/index.html): A collection of example plots with source code.
+- [Seaborn API Reference](https://seaborn.pydata.org/api.html): Detailed documentation of Seaborn's functions and classes.
