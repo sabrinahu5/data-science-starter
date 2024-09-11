@@ -3,17 +3,17 @@
 ## Table of Contents
 
 1. [Setting up Jupyter Notebook](#setting-up-jupyter-notebook)
-   - [Check Python](#check-python)
-   - [Setup T4SG Virtual Environment](#setup-t4sg-virtual-environment)
-     - [Download Miniconda](#download-miniconda)
-     - [Add Miniconda to your PATH](#add-miniconda-to-your-path)
-     - [Create the T4SG Environment](#create-the-t4sg-environment)
-   - [Setup Kernel](#setup-kernel)
-    - [Install Jupyter Extension](#install-jupyter-extension)
-    - [Add Virtual Environment as a Kernel](#add-virtual-environment-as-a-kernel)
-    - [Select the Correct Kernel](#select-the-correct-kernel)
-    - [Run Cells](#run-cells)
-2. [More information and resoruces](#more-information-and-resources)
+   - [Check Python Setup](#step-1-check-python-setup)
+   - [Setup T4SG Virtual Environment](#step-2-setup-t4sg-virtual-environment)
+     - [Download Miniconda](#1-download-miniconda)
+     - [Add Miniconda to your PATH](#2-add-miniconda-to-your-path)
+     - [Create the T4SG Environment](#3-create-the-t4sg-environment)
+   - [Setup Kernel](#step-3-setup-kernel)
+    - [Install Jupyter Extension](#1-install-jupyter-extension)
+    - [Add Virtual Environment as a Kernel](#2-add-virtual-environment-as-a-kernel)
+    - [Select the Correct Kernel](#3-select-the-correct-kernel)
+    - [Run Cells](#4-run-cells)
+2. [More information and resources](#more-information-and-resources)
    - [More about Pandas](#more-about-pandas)
    - [More about Matplotlib](#more-about-matplotlib)
    - [More about Seaborn](#more-about-seaborn)
@@ -63,7 +63,7 @@ Within this folder, we have a `t4sg.yml` file that lists the packages we'll be u
 #### 1. Download Miniconda:
 
 First, let's download Miniconda if you haven't already. 
-   - Visit the [Miniconda website](https://docs.conda.io/en/latest/miniconda.html)
+   - Visit the [Miniconda website](https://docs.conda.io/en/latest/miniconda.html).
    - Choose the installer for your operating system (Windows, macOS, or Linux) (Note: for macOS users, select the 'pkg' installer, not the 'bash' installer.)
    - Follow the instructions on the installer to install Miniconda.
 
@@ -211,15 +211,9 @@ Two popular package managers in the Python ecosystem are Conda and Micromamba:
 
 #### Mamba & Micromamba
 
-Mamba and Micromamba are powerful package management tools for Python and other programming languages. Here's a brief introduction to both:
+[**Mamba**](https://mamba.readthedocs.io/) is a fast, robust, and cross-platform package manager. It's a reimplementation of the conda package manager in C++, which makes it significantly faster than conda, especially in solving complex dependency trees. Mamba uses the same package format and repository structure as conda, making it fully compatible with existing conda packages and environments.
 
-Mamba:
-Mamba is a fast, robust, and cross-platform package manager. It's a reimplementation of the conda package manager in C++, which makes it significantly faster than conda, especially in solving complex dependency trees. Mamba uses the same package format and repository structure as conda, making it fully compatible with existing conda packages and environments.
-
-Micromamba:
-Micromamba is a tiny version of the mamba package manager. It's a single, self-contained executable that can be used to bootstrap conda-compatible environments on Linux, macOS, or Windows. Micromamba doesn't require an existing Python installation and can even install the desired version of Python for your environment. It's particularly useful for CI/CD pipelines, containers, or situations where a minimal footprint is desired.
-
-To get started with Micromamba, consult the [official documentation](https://mamba.readthedocs.io/en/latest/installation.html#micromamba) for up-to-date installation instructions for your operating system. Once installed, Micromamba will typically modify your shell's configuration to ensure that both the `micromamba` executable and the directory for storing virtual environments are added to your PATH.
+[**Micromamba**](https://mamba.readthedocs.io/en/latest/installation.html#micromamba) is a tiny version of the mamba package manager. It's a single, self-contained executable that can be used to bootstrap conda-compatible environments on Linux, macOS, or Windows. Micromamba doesn't require an existing Python installation and can even install the desired version of Python for your environment. It's particularly useful for CI/CD pipelines, containers, or situations where a minimal footprint is desired.
 
 #### Conda & Miniconda
 
@@ -232,7 +226,7 @@ While conda is generally slower than Mamba due to its Python implementation, it 
 
 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) is a free minimal installer for conda. It's a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages. If you need a minimal conda installation and don't require the additional packages that come with the full Anaconda distribution, Miniconda is an excellent choice.
 
-Given these advantages, _we suggest opting for a **conda** variant instead of mamba. However, the package manager specifics of your project are up to the SSWE & PM of your project.
+Given these advantages, we suggest opting for a **conda** variant instead of mamba. However, the package manager specifics of your project are up to the SSWE & PM of your project.
 
 
 For a more comprehensive understanding of virtual environments and package managers, refer to the Python documentation on [virtual environments & packages](https://docs.python.org/3/tutorial/venv.html?highlight=pip).
